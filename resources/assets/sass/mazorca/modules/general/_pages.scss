@@ -1,0 +1,50 @@
+.pages {
+	&__ttl {
+		font: {
+			family: f(roboto);
+			size: 34px;
+		}
+		color: c(red);
+		margin-top: 10%;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: left;
+		@include under(xs) {
+			margin-top: 20%;
+		}
+	}
+	&__text {
+		font: {
+			family: f(roboto);
+			size: 13px;
+		}
+		padding: 10px 0px 30px 0px;
+		color: c(gray);
+		line-height: 1.4;
+		width: 100%;
+		max-width: 715px;
+		i,em {
+			font-style: italic;
+		}
+		b, strong {
+			font-weight: bold;
+		}
+		a {
+			text-decoration: underline;
+		}
+		ul{
+        list-style-type: disc;
+      }
+      ol{
+        list-style-type: decimal;
+      }
+
+      big{
+          font-size: larger;
+      }
+
+      small{
+        font-size: smaller;
+      }
+	}
+}

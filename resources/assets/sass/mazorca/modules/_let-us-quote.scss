@@ -1,0 +1,158 @@
+/* Let us quote */
+.let-us-quote {
+
+	@include under(sm) {
+		margin-top: -50px;
+	}
+
+	#process {
+
+		.icons__content {
+		    height: 140px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    margin: 0;
+		}
+
+		.icons__content {
+			@include over(bag) {
+				opacity: 0;
+			}
+		}
+
+		.icons__icon-container {
+			&:hover {
+
+				.icons__content {
+					opacity: 1 !important;
+				}
+			}
+		}
+	}
+}
+
+.header-let {
+	width: 100%;
+	height: 60px;
+	background: white;
+
+	&__flex {
+		width: 100%;
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 40%;
+		height: auto;
+		@include under(mobile) {
+			width: 140px;
+		}
+	}
+
+	&__boton {
+		@extend %boton;
+		width: 185px !important;
+		height: 45px !important;
+		background: #DC3848;
+		font-size: 17px !important;
+		line-height: 20px !important;
+		@include under(mobile) {
+			width: 50% !important;
+			max-width: 200px;
+		}
+		@include under(mobile-xs) {
+			max-width: 190px;
+		}
+	}
+}
+
+/* B a n n e r */
+.banner-let {
+	background-image: url('../images/bg-let-us.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+	&__titulo {
+		width: 70%;
+		max-width: 460px;
+	}
+
+	&__subtitulo {
+		width: 80%;
+	    text-align: center;
+	    max-width: 550px;
+
+		font-family: 'kannada';
+		color: white;
+		font-size: 23px;
+		line-height: 30px;
+	}
+}
+
+/* C T A */
+.cta {
+	margin-top: 50px;
+	@include under(sm) {
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+	
+	&__flex {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+
+		@include under(mobile) {
+			flex-direction: column;
+    		align-items: center;
+		}
+	}
+
+	&__boton {
+		@extend %boton;
+		background: gray;
+
+		&.rojo {
+			background: #DC3848;
+
+			@include under(mobile) {
+				margin-top: 30px;		
+			}
+		}
+	}
+}
+
+%boton, .boton {
+    width: 270px;
+    height: 45px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'kannada';
+    font-weight: bold;
+	color: white;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+
+	@include under(mobile) {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	&:hover {
+		background-color: #4D4D4D;
+	}
+}

@@ -1,0 +1,20 @@
+%button, .button {
+  font-family: f(normal);
+  font-weight: bold;
+  font-size: 18px;
+  color: c(white);
+  background-color: c(red);
+  border-radius: 18px;
+  padding: 7px 25px;
+  text-align: center;
+  &:hover {
+      background-color: c(gray);
+  }
+
+}
+%small-button, .small-button {
+    @extend %button;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 3px 10px;
+}

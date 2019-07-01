@@ -1,0 +1,91 @@
+@charset "UTF-8";
+// //===Mazorca Core===//
+ @import "node_modules/mazorca-core/_mazorca-core.scss";
+//
+// //===Configs===//
+// @import "mazorca/config/_config";
+//
+// .admin {
+// 	font-family: f(light);
+// 	line-height: 150%;
+// }
+// .footer {
+// 	&__container {
+// 		background: c(gray);
+// 	}
+// 	&__logo {
+// 		width: 100%;
+// 		max-width: 80px;
+// 	}
+// }
+//
+//
+
+//=== Materialize Preload ===//
+@import "node_modules/materialize-css/sass/components/mixins";
+@import "node_modules/materialize-css/sass/components/color";
+
+//=== Redefinir variables de Materialize ===//
+@import "admin/_materialize__variables";
+
+//=== Admin Config ===//
+@import "admin/_config";
+@import "node_modules/mazorca-core/core/mixins/transitions/_ease-transition";
+
+//=== Materialize Load ===//
+@import "node_modules/materialize-css/sass/materialize";
+
+//=== Importar Módulos ===//
+@import "admin/_admin";
+@import "admin/_select";
+@import "admin/_header";
+@import "admin/_sidebar";
+@import "admin/_main";
+@import "admin/_content";
+@import "admin/_footer";
+@import "admin/_alerts";
+@import "admin/_modal";
+@import "admin/_media-manager";
+@import "admin/_users";
+@import "admin/_helpers";
+@import "admin/_welcome";
+@import "admin/_multi-select";
+@import "admin/_fonts";
+@import "admin/_googleSearchResults";
+//=== Summernote for Material styles ===//
+@import "admin/_materialNote";
+@import "admin/_vue-html5-editor";
+
+.instructions {
+	font-weight: bold;
+
+	&-title {
+		font-size: 14px;
+	}
+}
+
+.col {
+	margin: 7px 0;
+}
+
+textarea {
+	padding: 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a.link {
+	text-decoration: underline;
+}
+
+.tabs .indicator {
+	background-color: #D32F2F;
+}
+
+.divider.no-margin {
+	margin: 0;
+}
+
+select {display: block !important;}

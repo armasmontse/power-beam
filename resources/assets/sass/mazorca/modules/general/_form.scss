@@ -1,0 +1,87 @@
+.form {
+	margin-bottom: 30px;
+
+	&__row {
+		display: flex;
+		& > * { flex-grow: 1; }
+		&--label {
+			white-space: nowrap;
+			padding-top: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	&--half {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		& > .form__row {
+			width: calc(50% - 10px);
+			@include under(sm) {
+				width: 100%;
+			}
+		}
+	}
+
+	&--input,
+	&--textarea {
+		color: c(gray);
+		padding: 5px 0px;
+		font-size: 13px;
+		line-height: 13px;
+		font-family: f(roboto);
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 1px solid c(gray);
+		margin-bottom: 25px;
+		border-radius: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		&::placeholder { color: c(gray);}
+	}
+
+	&--textarea {
+		text-align: left;
+		line-height: 1.5;
+	}
+
+	&--submit {
+		text-decoration: none;
+	    color: c(white);
+	    background-color: c();
+	    text-align: center;
+	    letter-spacing: .5px;
+		border: none;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		overflow: hidden;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		vertical-align: middle;
+		z-index: 1;
+		transition: .3s ease-out;
+		font-family: f(roboto);
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 2px;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 2rem;
+	    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+		&:active {
+			top: 1px;
+		}
+		&-container {
+			width: 100%;
+			margin-top: 14px;
+		}
+	}
+}

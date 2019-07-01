@@ -1,0 +1,83 @@
+.flex {
+    display: flex !important;
+}
+.image {
+    background-color: lightgray;
+}
+
+.collapsible-header i {
+    width: inherit;
+}
+
+.no-top {
+  top: 0 !important;
+}
+
+.mt-5 {
+    margin-top: 5% !important;
+}
+
+.mb-5 {
+    margin-bottom: 5%;
+}
+
+th {
+    font-family: 'bold';
+}
+
+.btn {
+    font-family: 'bold';
+    color: white;
+    background-color: #4D4D4D;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    padding: 4px 2rem 0px 2em !important;
+    &:hover {
+        background-color: #B48D2F;
+    }
+}
+
+.btn-icon {
+    color: white;
+    background-color: #4D4D4D;
+    &:hover {
+        background-color: #B48D2F;
+    }
+}
+
+.btn-gold {
+    background-color: #B48D2F !important;
+}
+
+.red {
+    background-color: #DC3848 !important;
+    color: white;
+}
+
+.green {
+    background-color: #E4F4E9 !important;
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+    background-color: #B48D2F;
+}
+
+.switch label input[type=checkbox]:checked + .lever:after, .switch label .lever:after {
+    background-color: white;
+}
+
+.switch label .lever {
+    background-color: #4D4D4D;
+}
+
+.col-button {
+	text-align: center;
+	width: 90px;
+	// @include under(md){
+	// 	width: auto;
+	// }
+}
+.cursor-pointer {
+	cursor: pointer !important;
+}

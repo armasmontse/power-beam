@@ -1,0 +1,11 @@
+body, html { @include clearfix;}
+body {
+	padding-bottom: calc(80px + 150px);
+	padding-top: 30px;
+
+	@include under(sm){
+		padding-bottom: 80px;
+		padding-top: 60px;
+	}
+}
+

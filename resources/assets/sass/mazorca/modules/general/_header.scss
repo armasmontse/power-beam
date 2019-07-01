@@ -1,0 +1,147 @@
+.header {
+
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 9;
+	background-color: c(white);
+
+	&__logo {
+		max-width: 135px;
+		width: 100%;
+		& > img {
+			max-width: 135px;
+		}
+	}
+	&__menu {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 40%;
+
+		&-wrap {
+			max-width: 952px;
+		}
+
+		&-container{
+			@include under(sm) { display: none;}
+			position: absolute;//en el caso de la landing page, asumimos que el menu está dentro del offers__row, lo ponemos hasta arriba de ella con posición absoluta y a este row le damos un padding-top con la altura del menu. Esto, para que no se colapse cuando fijemos el menu
+			top: 0;
+			left: 0;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 14px;
+			background-color: c(white);
+		}
+	}
+
+	&__menu-mobil {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		overflow: auto;
+		z-index: 999;
+		background-color: white;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		background-color: c(aqua);
+
+		&-toggler { //header del menu mobil
+			@include over(sm) {display: none;}
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 60px;
+			width: 100%;
+			z-index: 1000;
+			background-color: c(white);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 40px;
+			&.open {
+				.header__menu-mobil-toggler-hamburger {
+					display: none;
+				}
+				.header__menu-mobil-toggler-hamburger--close {
+					display: block;
+				}
+			}
+
+			&-hamburger,
+			&-hamburger--close {
+				height: 25px;
+				width: 25px;
+			}
+			&-hamburger--close {
+				display: none;
+			}
+		}
+		&-link {
+			padding: 20px 20px 10px 40px;
+			display: block;
+			font-family: f(bold);
+			font-size: 32px;
+
+			&--sign-up {
+				background-color: c(gray);
+				color: c(white)
+			}
+
+			&--login {
+				background-color: c(gold);
+				color: c(white)
+			}
+
+			&--sm {
+				font-family: f(normal);
+				font-size: 17px;
+				padding-top: 2px;
+				padding-bottom: 5px;
+			}
+		}
+
+	}
+
+	&__micro-menu{
+		width:100%;
+		background: #000000;
+	    background: linear-gradient(90deg, c(gray), c(gray), c(gray), c(dark),c(dark),c(dark));
+		@include under(sm) {
+			display: none;
+		}
+	}
+
+	&__item {
+		@extend %label-menu;
+	}
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		align-items: center;
+	}
+	&__button {
+		@extend %small-button;
+		padding: 8px 10px;
+	}
+}
+
+.show-img{
+	display: block !important;
+}
+
+.none-img {
+	display: none !important;
+}

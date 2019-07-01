@@ -1,0 +1,113 @@
+.upload-box {
+	max-width: 420px;
+	max-height: 320px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+
+	&__box {
+		border: 1px solid white;
+		position: relative;
+		cursor: copy;
+		min-height: 230px;
+		
+		&:hover {
+			background-color: #eee;
+			// border: 1px dashed #ddd;
+		}
+	}
+
+	&__button {
+		background-color: #eee;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		cursor: copy;
+
+
+		&-container {
+			cursor: pointer;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 16px;
+			height: 200px;
+			width: 100%;
+			&:hover {
+				& .upload-box__pseudo-button {
+						background-color: #444;
+				
+				}
+			}
+			&--deleteFile {
+				margin-top: 25px;
+				z-index: 1;
+				display: block;
+				padding: 15px 15px 11px;
+				background-color: #d9534f;
+				color: #fff !important;
+				text-transform: uppercase;
+				border-radius: 5px;
+				width: auto;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&__p {
+		margin-bottom: 20px;
+		z-index: 1;
+		&--filename {
+			text-align: center;
+			margin-top: 30px;
+		}
+	}
+
+	&__icon {
+		z-index: 1;
+		// font-size: 77px;
+		font-size: 45px;
+		margin-bottom: 16px;
+		color: #333;
+	}
+
+	&__pseudo-button {
+		z-index: 1;
+		display: block;
+		padding: 15px 15px 11px;
+		background-color: #333;
+		color: #fff;
+		text-transform: uppercase;
+		border-radius: 5px;
+		&--send {
+			display: block;
+			margin: 0 auto;
+			margin-top: 45px;
+			padding: 10px 15px;	
+		}
+	}
+	&__bar {
+		border-radius: 5px;
+		background-color: #B48D2F;
+		height: 5px;
+		width: 0;
+
+		&-container {
+			margin-top: 65px;
+			border-radius: 5px;
+			background-color: transparentize(#B48D2F, 0.6);
+			width: 100%;
+			height: 5px;
+		}
+	}
+	&__link {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,128 @@
+$primary-color: #DC3848;
+$tercery-color:#B48D2F;
+
+.navbarUser {
+	width: 100%;
+
+	// &__img {
+	// 	height: 45px;
+	// 	width: 240px;
+	// 	margin: -14px 8px;
+	// 	
+		
+	// 	@include under (sm) {
+	// 		height: 40px;
+	// 		width: 100px;
+	// 		margin: -13px 0px;
+	// 		display: inline-block;
+	// 	}
+	// }
+
+	nav {
+		height: auto;
+		box-shadow: none;
+		background-color: transparent;
+
+		.container {
+			width: 100%;
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+
+		.nav-row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-flow: row wrap;
+			width: 100%;
+			margin: 0;
+			padding: 0 20px;
+		}
+
+		.logo {
+			.title {
+				font-size: 32px;
+				margin-right: 10px;
+
+				@include under(sm) {
+					font-size: 24px;
+				}
+			}
+
+			.img {
+				height: 42px;
+				width: auto;
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 10px;
+
+				@include under(sm) {
+					height: 32px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+		.right {
+			margin-left: auto;
+
+			li {
+				min-width: 56px;
+				position: relative;
+				display: inline-block;
+
+				.menu-link {
+					font-weight: bold;
+					font-size: 20px;
+					
+					@include under(sm) {
+						font-size: 16px;
+						padding: 0 10px 0 10px;
+					}
+				}
+
+				.btn-floating {
+					position: absolute;
+					top: 35px;
+				}
+			}
+		}
+	}
+
+	.drop-down-icon {
+		line-height: 68px !important;
+	}
+}
+
+
+.powerbeam-primary {
+	background-color: $primary-color;
+}
+
+.powerbeam-secondary {
+	background-color: $tercery-color;
+}
+
+// nav.container-user {
+// 	@include under(sm) {
+// 		height: auto;
+// 	}
+	
+// 	.brand-logo{
+// 		@include under(sm) {
+// 			display: inline-block;
+// 			font-size: 20px;
+// 			transform: none;
+// 			left: 0;
+// 			text-align: left;
+// 			position: initial;
+// 			margin-left: 10px;
+// 		}
+		
+// 	}
+
+// 	#nav-mobile {
+// 		@include under(sm) {
+// 		}
+// 	}
+// }

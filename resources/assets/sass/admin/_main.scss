@@ -1,0 +1,30 @@
+// .row {
+// 	.main {
+// 		float: right;
+// 		width: calc(100% - #{$sidebar-width});
+// 		margin-left: 300px;
+// 		padding: 0;
+// 		position: relative;
+// 		min-height: 100vh;
+// 		&__title {
+// 			margin-top: 0;
+// 		}
+// 		&__divider {
+// 			margin-bottom: 50px;
+// 		}
+// 	}
+// }
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	margin-left: auto;
+
+	@media #{$medium-and-up} {
+		width: calc(100% - 300px);
+	}
+}

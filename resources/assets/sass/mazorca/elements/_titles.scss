@@ -1,0 +1,78 @@
+%title {
+    font-family: f(sans);
+    font-size: 12px;
+    font-weight: normal;
+    color: c();
+    text-transform: uppercase;
+}
+
+%title-description {
+    @extend %title;
+    font-family: f(inputs);
+    font-style: italic;
+}
+
+%title-img {
+  @extend %title;
+  color: c(beige);
+}
+
+%title-bill {
+    @extend %title;
+    font-size: 13px;
+    color: c(brown);
+}
+%title-about, .title-about {
+    font: {
+        family: f(normal);
+        size: 36px;
+        weight: bold;
+    }
+    line-height: 39px;
+    color: c();
+
+}
+%title-process, .title-process {
+    @extend %title-about;
+    font-size: 31px;
+    color: c(red);
+
+}
+%subtitle-about, .subtitle-about {
+    font: {
+        family: f(normal);
+        size: 23px;
+    }
+    line-height: 30px;
+}
+%subtitle-aboutb, .subtitle-aboutb {
+    @extend %subtitle-about;
+    font-weight: bold;
+}
+%numbers, .numbers {
+    font: {
+        family: f(normal);
+        size: 20px;
+        weight: bold;
+    }
+    color: c(red);
+}
+%subtitle-contact, .subtitle-contact {
+    font: {
+        family: f(normal);
+        size: 18px;
+        weight: bold;
+    }
+    line-height: 22px;
+    color: c(white);
+}
+%office-name, .office-name {
+    @extend %subtitle-contact;
+    font-size: 15px;
+    line-height: normal;
+}
+%address-contact, .address-contact {
+    @extend %office-name;
+    font-weight: normal;
+    line-height: 20px;
+}

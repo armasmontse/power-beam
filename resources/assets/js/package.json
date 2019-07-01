@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "micorriza",
+  "version": "1.3.0-Blank-App",
+  "description": "Micorriza",
+  "main": "micorriza.js",
+  "scripts": {
+    "test": "karma start",
+    "setup_cltvo_karma": "node node_modules/cltvo-karma/bin/full-install.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cltvo-karma": "^1"
+  }
+}

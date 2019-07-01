@@ -1,0 +1,102 @@
+.splash{
+
+	&--max{
+		// max-width:780px;
+		@include under (bag) {
+			width: calc(100% - 80px);
+		}
+		@include under (xs) {
+			width: calc(100% - 40px);
+		}
+		&--img {
+			
+		}
+	}
+	@include center('xy');
+	&__background {
+		height: calc( 100vh - 72px - 29px);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		@include under(sm){
+			height: 100vh ;
+		};
+  }
+	&__container {
+		background-color: c(white);
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: -7px;
+	  	@include under(xs){
+			margin: -3px auto 0;			
+		}
+	}
+  &__content {
+	  @extend %paragraph-cover;
+	  text-align: center;
+	  max-width: 565px;
+	  width: 100%;
+	  margin: 0 auto;
+	  padding-top: 60px;
+	  padding-bottom: 50px;
+  }
+	&__logo {
+		max-width: 157px;
+		width: 100%;
+		margin: 0 auto 60px auto;
+	}
+  	&__button {
+		@extend %button;
+		max-width: 273px;
+		width: 100%;
+		margin: 0px auto 80px auto;
+		padding: 20px 25px 12px 25px;
+		border-radius: 35px;
+		@include under (sm) {
+			padding: 15px 20px 7px!important;
+		}
+  	}
+  	&__contact {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
+		position: absolute;
+		top: 0;
+	&--bottom {
+		bottom: 0px;
+		top: auto;
+	}
+
+	  &--initial{
+		  position: initial;
+	  }
+	  &__1-3 {
+		  width: calc(100% / 3);
+		  text-align: center;
+		  @extend %label-menut;
+		  padding: 10px 0px 5px 0px;
+		  &:nth-of-type(1) {
+			  background-color: c(gray);
+		  }
+		  &:nth-of-type(2) {
+			  background-color: c(gold);
+		  }
+		  	&:nth-of-type(3) {
+			  	background-color: c(dark);
+		  	}
+	  	}
+  	}
+}
+
+
+.header__button {
+	padding: 15px 25px 12px 25px !important;
+	border-radius: 35px !important;
+	@include under (sm) {
+		padding: 12px 20px 8px !important;
+	}
+}

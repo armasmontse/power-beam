@@ -1,0 +1,19 @@
+$colors: (
+	base:	#333333,
+	aqua:   #E4F4E9,
+	gold: 	#B48D2F,
+	red: 	#DC3848,
+	dark:	#000000,
+	gray: 	#4D4D4D,
+	white:	#FFFFFF,
+	checkbox: #757575
+);
+
+@function c($color:base) {
+	@return map-get($colors, $color);
+}
+
+$colorForeground: c();
+$colorBackground: c(white);
+$colorFeatured: c(azul);
+$colorError: #8A1010;

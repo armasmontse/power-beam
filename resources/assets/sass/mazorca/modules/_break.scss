@@ -1,0 +1,22 @@
+.break {
+	height: auto;
+	max-height: 345px;
+	overflow: hidden;
+	position: relative;
+	&__img {
+		height: 100%;
+		@include under (sm) {
+			object-fit: none;
+		}
+	}
+	&__btn {
+		@extend %button;
+		@include center('xy');
+		padding: 13px 25px 10px;
+		z-index: 5;
+		@include under(xs) {
+			width: calc(100% - 30px);
+			text-align: center;
+		}
+	}
+}

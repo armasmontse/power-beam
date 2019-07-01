@@ -1,0 +1,19 @@
+.users-create {
+	&__role-select{
+		float: right;
+		width: calc(100% - 80px);
+	}
+}
+
+
+/* Botones admin */
+.mt-10 i.paddTop-10{
+	input {
+		margin-top: 0px !important;
+	}
+}
+.user__container i, i.user__container{
+	input {
+		margin-top: 8px !important;
+	}
+} 

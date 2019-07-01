@@ -1,0 +1,35 @@
+.banner {
+	background-color: c();
+
+	&__container{
+			width: 100%;
+	}
+	&__paragraph {
+		@extend %paragraph-about;
+		padding: 80px 0px;
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+		text-align: center;
+		z-index: 999;
+		@include under(bag) {
+			padding: 75px 30px;
+		}
+		@include under(xs) {
+			padding: 75px 20px;
+		}
+
+
+	}
+	&__image {
+		position: absolute;
+		max-width: 152px;
+		bottom: 40%;
+		@include under(bag) {
+			display: none;
+		}
+		&--right {
+			right: 0px;
+		}
+	}
+}

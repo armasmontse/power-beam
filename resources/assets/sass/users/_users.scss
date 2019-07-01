@@ -1,0 +1,71 @@
+.container-user {
+	width: 100% !important;
+	max-width: 1440px;
+    margin: 0 auto
+}
+.user{
+    color:$secondary-color;
+	&__ttl{
+		margin-top: 63px;
+	    font-family: "Roboto-Regular", sans-serif;
+	    font-size: 34px;
+	    color: $primary-color;
+	    text-align: left;
+		text-transform:uppercase;
+		margin-bottom: 0px;
+		&--other-margin {
+			margin: 0px 0px 45px 0px;
+		}
+	}
+	.row{
+		margin-bottom: 0px;
+	}
+	.link-red{
+		color: $primary-color;
+	}
+
+	&__container {
+		margin-left: 18%;
+		margin-right: 18%;
+		@include under(xs) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&--gray {
+			padding: 58px 0px 61px 0px;
+			background-color: #EEEEEE;
+			margin-top: 60px;
+		}
+	}
+
+	&__payment {
+		margin-top: 205px;
+		margin-bottom: 25px;
+		font-size: 25px;
+		&-project {
+			font-size: 20px !important;
+		}
+	}
+
+	&__project {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center ;
+		margin-top: 20px;
+		margin-right: 30px;
+		.flex-center {
+			display: flex;
+			align-items: center;
+		}
+		&--order {
+			margin-right: 30px;
+		}
+	}
+
+}
+
+
+.user__container > .mt-10 > i.mt-10.waves-effect.waves-light.btn.left-align.paddTop-10.waves-input-wrapper {
+	margin-bottom: 50px;
+	padding-top: 2px !important;
+}

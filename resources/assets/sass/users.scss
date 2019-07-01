@@ -1,0 +1,73 @@
+@charset "UTF-8";
+// //===Mazorca Core===//
+	@import "node_modules/mazorca-core/_mazorca-core.scss";
+//
+// //===Configs===//
+ @import "mazorca/config/_config";
+	@import "mazorca/config/_widths";//row-max-width y otros
+	@import "mazorca/config/_base";//base, base-px, base-%
+	@import "mazorca/config/_pads-n-margs";//
+	@import "mazorca/config/_breaks";//Breakpoints
+	@import "mazorca/config/_colors";//colores
+
+// .admin {
+// 	font-family: f(light);
+// 	line-height: 150%;
+// }
+// .footer {
+// 	&__container {
+// 		background: c(gray);
+// 	}
+// 	&__logo {
+// 		width: 100%;
+// 		max-width: 80px;
+// 	}
+// }
+//
+//
+
+//=== Materialize Preload ===//
+@import "node_modules/materialize-css/sass/components/mixins";
+@import "node_modules/materialize-css/sass/components/color";
+
+//=== Redefinir variables de Materialize ===//
+@import "users/_materialize__variables";
+
+//=== Admin Config ===//
+@import "admin/_config";
+@import "node_modules/mazorca-core/core/mixins/transitions/_ease-transition";
+
+//=== Materialize Load ===//
+@import "node_modules/materialize-css/sass/materialize";
+
+//=== Importar Módulos ===//
+@import "admin/_admin";
+@import "admin/_select";
+@import "admin/_content";
+@import "admin/_alerts";
+@import "admin/_modal";
+@import "admin/_media-manager";
+@import "admin/_users";
+@import "admin/_multi-select";
+@import "admin/_fonts";
+@import "users/_users";
+@import "users/_navbarUsers";
+@import "users/_projects";
+@import "users/_projectsTable";
+@import "users/_helpers";//esto debería de ir hasta arriba, por si se quieren modificar estilos en un módulo
+@import "users/_footer";
+@import "users/_html-body";//esto debería de ir hasta arriba, por si se quieren modificar estilos en un módulo
+@import "users/_upload-box";
+@import "users/_cards";
+@import "users/_micromenu";
+
+
+
+//=== Summernote for Material styles ===//
+@import "admin/_materialNote";
+@import "admin/_vue-html5-editor";
+
+// @import "mazorca/modules/general/_header";
+// @import "mazorca/modules/_splash";
+
+select {display: block !important;}

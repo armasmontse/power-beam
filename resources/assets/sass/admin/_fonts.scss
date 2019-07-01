@@ -1,0 +1,9 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin
+ */
+
+@font-face { font-family: 'kannada'; src: url('../fonts/KannadaSangamMN.eot?#iefix') format('embedded-opentype'),  url('../fonts/KannadaSangamMN.woff') format('woff'), url('../fonts/KannadaSangamMN.ttf') format('truetype'), url('../fonts/KannadaSangamMN.svg#Value-Sans') format('svg'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'bold'; src: url('../fonts/KannadaSangamMN-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/KannadaSangamMN-Bold.woff') format('woff'), url('../fonts/KannadaSangamMN-Bold.ttf') format('truetype'), url('../fonts/KannadaSangamMN-Bold.svg#Value-Sans') format('svg'); font-weight: bold; font-style: normal; }

@@ -1,0 +1,41 @@
+%paragraph-cover, .paragraph-cover {
+    font-family: f(normal);
+    font-size: 23px;
+    line-height: 30px;
+    color: c();
+}
+%paragraph-about, .paragraph-about {
+    font: {
+        family: f(normal);
+        size: 18px;
+    }
+    color: c(white);
+    line-height: 26px;
+}
+%paragraph-process, .paragraph-process {
+    font: {
+        family: f(normal);
+        size: 15px;
+    }
+    color: c();
+    line-height: 20px;
+}
+%paragraph-reviews, .paragraph-reviews {
+    font: {
+        family: f(normal);
+        size: 22px;
+        weight: bold;
+    }
+    line-height: 32px;
+    color: c();
+}
+%name-process, .name-process {
+    @extend %paragraph-process;
+    line-height: 22px;
+    font-weight: bold;
+}
+%job-process, .job-process {
+    @extend %name-process;
+    font-size: 13px;
+    font-weight: normal;
+}

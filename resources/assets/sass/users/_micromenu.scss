@@ -1,0 +1,44 @@
+/* M i c r o m e n u */
+.header__micro-menu {
+	width: 100%;
+	background: linear-gradient(90deg, #4D4D4D, #4D4D4D, #4D4D4D, #000000, #000000, #000000);
+	z-index: 999;
+	/*position: fixed; */
+	/* Descomentar si nos piden que el micromenú sea fixed en users */
+
+	.grid__container {
+		max-width: 1200px;
+		width: 100%;
+		margin:  0 auto;
+
+		.splash__contact {
+
+			&__1-3 {
+			width: calc(100% / 3);
+			color: #FFF;
+			text-align: center;
+
+			}
+
+			nav {
+				background-color: #B48D2F;
+			    height: 30px;
+			    display: flex;
+		    	justify-content: center;
+		    	align-items: center;
+		    	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px -0px rgba(0, 0, 0, 0);
+
+		    	a {
+		    		margin: 0 5px;
+		    	}
+			}
+		}
+	}
+
+	.splash__contact.splash__contact--initial {
+	    display: flex;
+	    width: 100%;
+	    justify-content: space-around;
+	    align-items: center;
+	}
+}

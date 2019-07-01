@@ -1,0 +1,35 @@
+.footer {
+	color: #fff;
+	width: 100%;
+	padding-bottom: 20px;
+	font-size: 12px;
+	margin-top: 0;
+	border-top: 1px solid #eceff1;
+	background-color: #4D4D4D !important;
+	
+	&__copyright {
+		color: #fff;
+		background-color: transparent !important;
+	}
+	
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 0px 40px;
+	}
+	
+	&__logo {
+		height: 40px;
+		margin-top: 6px;
+		max-width: 150px;
+	}
+	
+	&__link {
+		color: #fff;
+		font-weight: 300;
+		text-decoration: underline;
+	}
+}
