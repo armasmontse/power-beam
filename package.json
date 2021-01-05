@@ -12,7 +12,7 @@
     "remove_build_folder": "echo 'borrando folder public/build' && rm -rf public/build && echo 'compilando nuevo build de css y js'"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "cltvo-animate-on-scroll": "1.1.0",
     "lodash.debounce": "4.0.8",
     "materialize-css": "0.97.8",
